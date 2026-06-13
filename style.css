@@ -1,0 +1,29 @@
+:root{
+
+--bg:#060818;
+--bg-card:#0B1023;
+
+--vino:#D61A72;
+--vino-dark:#8B1046;
+
+--morado:#7B2CBF;
+--morado-dark:#4B0082;
+
+--aqua:#00D4FF;
+--aqua-dark:#0099CC;
+
+--text:#FFFFFF;
+--gray:#A0A0A0;
+
+} 
+
+/* Cambiar el color de los enlaces al pasar el mouse por tus tonos morados/aqua */
+.navbar-nav .nav-link:hover {
+    color: aqua !important; /* Tu color aqua */
+}
+
+/* Cambiar el color del botón del menú en celular */
+.navbar-toggler {
+    border-color: #4a1525; /* Tu color vino */
+}
+
