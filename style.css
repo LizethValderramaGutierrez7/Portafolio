@@ -17,13 +17,144 @@
 
 } 
 
-/* Cambiar el color de los enlaces al pasar el mouse por tus tonos morados/aqua */
 .navbar-nav .nav-link:hover {
-    color: aqua !important; /* Tu color aqua */
+    color: aqua !important; 
 }
 
-/* Cambiar el color del botón del menú en celular */
 .navbar-toggler {
-    border-color: #4a1525; /* Tu color vino */
+    border-color: #4a1525; 
 }
 
+#about{
+    padding:80px 5%;
+    background:#f5f6f8;
+}
+
+.about-container{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    background:white;
+
+    border:1px solid #e7e7e7;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+}
+
+.about-image img{
+
+    width:180px;
+}
+
+.about-content{
+
+    flex:1;
+}
+
+.about-content h2{
+
+    color:#B0125B;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+.line{
+
+    width:60px;
+    height:4px;
+
+    background:#B0125B;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+.about-content p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+.stats{
+
+    display:flex;
+
+    gap:25px;
+}
+
+.stat{
+
+    text-align:center;
+
+    min-width:120px;
+}
+
+.icon{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    font-size:24px;
+
+    margin:auto;
+    margin-bottom:15px;
+}
+
+.pink{
+    background:#C2185B;
+}
+
+.purple{
+    background:#7B2CBF;
+}
+
+.aqua{
+    background:#00BCD4;
+}
+
+.rose{
+    background:#FF4081;
+}
+
+.stat h3{
+
+    font-size:2rem;
+
+    color:#2E2246;
+
+    margin-bottom:10px;
+}
+
+.stat span{
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    color:#666;
+}
