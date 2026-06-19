@@ -52,7 +52,7 @@
     0 5px 15px rgba(0,0,0,.05);
 }
 
-.about-image img{
+.about-img{
 
     width:180px;
 }
@@ -157,4 +157,126 @@
     font-weight:600;
 
     color:#666;
+}
+.skill-card{
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 20px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.icon-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;              
+  flex-wrap: wrap;         
+}
+
+
+/* Colores */
+.custom-card1 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#c2185b,#e91e63);
+}
+
+.custom-card2 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg, #673ab7, #9c27b0);
+}
+
+.custom-card3 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#00bcd4,#26c6da);
+}
+
+.custom-card4 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#ff4081,#f50057);
+}
+
+
+#projects{
+    background:#f8f9fa;
+}
+
+.card{
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-img-top{
+    height:200px;
+    object-fit:cover;
+}
+
+.badge{
+    margin-right:5px;
+    margin-bottom:5px;
 }
