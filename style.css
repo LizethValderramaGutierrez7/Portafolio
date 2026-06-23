@@ -191,7 +191,7 @@
 }
 
 
-/* Colores */
+
 .custom-card1 {
   position: relative;
   border: none;
@@ -281,20 +281,19 @@
     margin-bottom:5px;
 }
 
-/* Paleta de colores personalizada */
+
 .text-vino {
-    color: #9d0042 !important; /* El color guinda que usamos antes */
+    color: #9d0042 !important; 
 }
 
 .text-dark-blue {
-    color: #1a103c !important; /* El azul oscuro de los títulos */
+    color: #1a103c !important; 
 }
 
 .text-cyan {
-    color: #00a8cc !important; /* El azul claro/cian de las comillas y etiquetas de código */
+    color: #00a8cc !important; 
 }
 
-/* Línea divisoria gris claro para las dos primeras columnas en pantallas grandes */
 @media (min-width: 992px) {
     .custom-section-border {
         border-right: 1px solid #e5e7eb;
@@ -304,13 +303,11 @@
     }
 }
 
-/* Ajustes de estilo para la caja de la frase */
 .custom-quote-card {
     border: 1px solid #e2e8f0 !important;
     background-color: #ffffff;
 }
 
-/* Iconos de la lista alineados */
 .custom-contact-list i {
     display: inline-block;
     width: 20px;
@@ -318,16 +315,15 @@
 }
 
 .custom-footer {
-  /* Este gradiente recrea exactamente la transición de colores de tu imagen */
+  
   background: linear-gradient(90deg, #9d0042 0%, #6f22b2 40%, #2575fc 75%, #00a8cc 100%);
 }
 
-/* Espaciado de letras fino para que luzca profesional como en la foto */
 .tracking-wider {
   letter-spacing: 0.5px;
 }
 
-/* Efecto suave para que los iconos brillen al pasar el mouse por encima */
+
 .opacity-100-hover {
   transition: opacity 0.2s ease-in-out;
 }
@@ -337,4 +333,38 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+
+@media (max-width: 991px) {
+  
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+   
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
 }
