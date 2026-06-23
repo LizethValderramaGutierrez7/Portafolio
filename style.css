@@ -52,7 +52,7 @@
     0 5px 15px rgba(0,0,0,.05);
 }
 
-.about-image img{
+.about-img{
 
     width:180px;
 }
@@ -158,3 +158,184 @@
 
     color:#666;
 }
+.skill-card{
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 20px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.icon-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;              
+  flex-wrap: wrap;         
+}
+
+
+/* Colores */
+.custom-card1 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#c2185b,#e91e63);
+}
+
+.custom-card2 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg, #673ab7, #9c27b0);
+}
+
+.custom-card3 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#00bcd4,#26c6da);
+}
+
+.custom-card4 {
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(135deg,#ff4081,#f50057);
+}
+
+
+#projects{
+    background:#f8f9fa;
+}
+
+.card{
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-img-top{
+    height:200px;
+    object-fit:cover;
+}
+
+.badge{
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+/* Paleta de colores personalizada */
+.text-vino {
+    color: #9d0042 !important; /* El color guinda que usamos antes */
+}
+
+.text-dark-blue {
+    color: #1a103c !important; /* El azul oscuro de los títulos */
+}
+
+.text-cyan {
+    color: #00a8cc !important; /* El azul claro/cian de las comillas y etiquetas de código */
+}
+
+/* Línea divisoria gris claro para las dos primeras columnas en pantallas grandes */
+@media (min-width: 992px) {
+    .custom-section-border {
+        border-right: 1px solid #e5e7eb;
+    }
+    .custom-left-border {
+        border-left: 1px solid #e5e7eb;
+    }
+}
+
+/* Ajustes de estilo para la caja de la frase */
+.custom-quote-card {
+    border: 1px solid #e2e8f0 !important;
+    background-color: #ffffff;
+}
+
+/* Iconos de la lista alineados */
+.custom-contact-list i {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.custom-footer {
+  /* Este gradiente recrea exactamente la transición de colores de tu imagen */
+  background: linear-gradient(90deg, #9d0042 0%, #6f22b2 40%, #2575fc 75%, #00a8cc 100%);
+}
+
+/* Espaciado de letras fino para que luzca profesional como en la foto */
+.tracking-wider {
+  letter-spacing: 0.5px;
+}
+
+/* Efecto suave para que los iconos brillen al pasar el mouse por encima */
+.opacity-100-hover {
+  transition: opacity 0.2s ease-in-out;
+}
+.opacity-100-hover:hover {
+  opacity: 1 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
